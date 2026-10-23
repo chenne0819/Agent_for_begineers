@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Agent 課程發布助手：個人自用的 YouTube 頻道連線與課程影片發布工具說明。">
+  <title>Agent 課程發布助手</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <header><div class="shell"><a class="brand" href="index.html">Agent 課程發布助手</a><nav aria-label="主要導覽"><a href="index.html" aria-current="page">工具說明</a><a href="privacy.html">隱私權政策</a><a href="terms.html">服務條款</a></nav></div></header>
+  <main id="main" class="shell">
+    <p class="eyebrow">個人自用 · 本機執行</p>
+    <h1>讓課程影片，依序與觀眾見面。</h1>
+    <p class="intro">Agent 課程發布助手是供頻道擁有者自用的工具，設計用途是連接自己的 YouTube 頻道，並將完成的課程影片上傳、安排發布時間。</p>
+    <p class="note">目前已完成 Google OAuth 授權與頻道連線檢查，上傳及排程流程仍在建置中。此網站提供工具與資料使用說明，不會在網頁上要求登入或接收影片。</p>
+    <div class="content">
+      <h2>工具如何運作</h2>
+      <div class="step"><b>01</b><div><h3>由你授權自己的頻道</h3><p>本機程式開啟 Google 官方授權頁，由你選擇帳戶與頻道、同意所需權限。</p></div></div>
+      <div class="step"><b>02</b><div><h3>確認連接的頻道</h3><p>透過 YouTube Data API 讀取頻道名稱與識別碼，協助確認後續發布的目的地。</p></div></div>
+      <div class="step"><b>03</b><div><h3>指定影片與發布安排</h3><p>上傳流程完成後，由使用者指定影片檔案、標題、說明、公開狀態與發布時間，再交由 YouTube 處理。</p></div></div>
+      <h2>為什麼需要 YouTube 權限</h2>
+      <ul>
+        <li><code>youtube.readonly</code>：讀取頻道資訊，確認連接對象。</li>
+        <li><code>youtube.upload</code>：供後續由使用者指定的影片上傳與發布流程使用；Google 同意畫面可能顯示「管理您的 YouTube 影片」。</li>
+      </ul>
+      <p>授權資料保存在本機設定資料夾。這個公開網站及 GitHub repo 不會儲存 OAuth 權杖或用戶端憑證。</p>
+      <p>詳細資料處理方式請參閱<a href="privacy.html">隱私權政策</a>，使用前請閱讀<a href="terms.html">服務條款</a>。</p>
+      <h2>聯絡與維護</h2>
+      <p>由 GitHub 使用者 <a href="https://github.com/chenne0819">chenne0819</a> 維護。問題可透過 <a href="https://github.com/chenne0819/Agent_for_begineers/issues">GitHub Issues</a> 提出；公開留言請勿附上權杖、密碼或私人影片。</p>
+    </div>
+  </main>
+  <footer><div class="shell"><p>Agent 課程發布助手 · 更新日期：2026 年 10 月 24 日</p><p>獨立的個人用途工具，非 Google 或 YouTube 官方產品。</p></div></footer>
+</body>
+</html>
