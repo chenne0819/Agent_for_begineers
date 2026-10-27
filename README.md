@@ -9,21 +9,22 @@
 | 課程 | 主題 | 範例程式 |
 | --- | --- | --- |
 | 第 1 課 | LLM API 入門：讓程式跟 AI 對話 | [冰箱清庫存料理顧問](lessons/01-llm-api/code/) |
+| 第 2 課 | Prompt 與結構化輸出 | [口語記帳轉帳本](lessons/02-prompt-structured-output/code/) |
 
 ## 開始使用
 
 1. 在上方選擇 **Code → Download ZIP** 並解壓縮，或使用 `git clone` 下載此 repository。
-2. 進入 `lessons/01-llm-api/code/`。
-3. 按照該課的 [README](lessons/01-llm-api/code/README.md) 建立 Python 環境、安裝套件，再執行範例。
+2. 進入所選課程的 `code/` 資料夾。
+3. 按照該課的 README 建立 Python 環境、安裝套件，再執行範例。
 
-目前第 1 課使用 Python 3.10 以上及 Anthropic API。API 需自行申請金鑰並支付用量費；費用以服務商實際帳單為準。
+目前第 1、2 課使用 Python 3.10 以上及 Anthropic API。API 需自行申請金鑰並支付用量費；費用以服務商實際帳單為準。
 
 ## 金鑰與個人資料
 
 - repository 只提供空白的 `.env.example`；請複製成 `.env`，再填入自己的金鑰。
-- 不要將 `.env`、API 金鑰、OAuth 權杖、私人資料或真實對話紀錄提交到 GitHub。
-- 範例的食材與對話會傳送到 Anthropic API，請使用適合提供給該服務的內容。
-- 範例會顯示 token 用量與估計費用；模型、價格和 API 功能可能更新，請以 [Anthropic 官方文件](https://platform.claude.com/docs/en/about-claude/pricing) 為準。
+- 不要將 `.env`、API 金鑰、OAuth 權杖、私人資料、真實對話紀錄或產生的 `帳本.csv` 提交到 GitHub。
+- 輸入的食材、記帳文字與對話會傳送到 Anthropic API，請使用適合提供給該服務的內容。
+- 第 1 課範例會顯示 token 用量與估計費用；模型、價格和 API 功能可能更新，請以 [Anthropic 官方文件](https://platform.claude.com/docs/en/about-claude/pricing) 為準。
 
 ## 關於頻道
 
